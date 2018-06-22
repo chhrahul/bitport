@@ -38,19 +38,20 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        var url = 'https://bitport.global/' // change to whatever you want
+        cordova.InAppBrowser.open(url,  '_blank', 'toolbar=no,location=no');
         console.log('Received Event: ' + id);
     }
 };
 
-    document.addEventListener("deviceready", onDeviceReady, false);
+    /*document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady() {
          var ref = window.open('https://bitport.global/', '_blank', 'toolbar=no,location=no');
          ref.addEventListener('exit', function(event) { 
 		// alert(event.type); 
 		 
-		 });		 
+		 });*/		 
 		
 		
     } 
