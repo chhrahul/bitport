@@ -46,7 +46,7 @@ var app = {
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady() {
-         var ref = window.open('https://bitport.global/', '_blank', 'location=no');
+         var ref = window.open('https://bitport.global/', '_blank', 'toolbar=no,location=no');
          ref.addEventListener('exit', function(event) { 
 		// alert(event.type); 
 		 
